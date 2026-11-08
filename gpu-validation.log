@@ -1,0 +1,252 @@
+2026-11-08T09:51:03.8049601Z Current runner version: '2.338.2'
+2026-11-08T09:51:03.8056637Z Runner name: 'ephemeral-fastvideo-gpu'
+2026-11-08T09:51:03.8057348Z Runner group name: 'Default'
+2026-11-08T09:51:03.8058206Z Machine name: '***'
+2026-11-08T09:51:03.8060874Z ##[group]GITHUB_TOKEN Permissions
+2026-11-08T09:51:03.8063093Z Contents: read
+2026-11-08T09:51:03.8063683Z Metadata: read
+2026-11-08T09:51:03.8064230Z ##[endgroup]
+2026-11-08T09:51:03.8066152Z Secret source: Actions
+2026-11-08T09:51:03.8066951Z Cache mode: write
+2026-11-08T09:51:03.8067531Z Prepare workflow directory
+2026-11-08T09:51:03.8626354Z Prepare all required actions
+2026-11-08T09:51:03.8672447Z Getting action download info
+2026-11-08T09:51:06.0407022Z Download action repository 'actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+2026-11-08T09:51:09.0690623Z Complete job name: test
+2026-11-08T09:51:09.2180366Z ##[group]Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+2026-11-08T09:51:09.2181278Z with:
+2026-11-08T09:51:09.2181514Z   persist-credentials: false
+2026-11-08T09:51:09.2181869Z   repository: bingdongni/fastvideo-gpu-validation-20261108-47e7a794f1
+2026-11-08T09:51:09.2184266Z   token: ***
+2026-11-08T09:51:09.2184514Z   ssh-strict: true
+2026-11-08T09:51:09.2184757Z   ssh-user: git
+2026-11-08T09:51:09.2184970Z   clean: true
+2026-11-08T09:51:09.2185193Z   sparse-checkout-cone-mode: true
+2026-11-08T09:51:09.2185679Z   fetch-depth: 1
+2026-11-08T09:51:09.2185901Z   fetch-tags: false
+2026-11-08T09:51:09.2186127Z   show-progress: true
+2026-11-08T09:51:09.2186342Z   lfs: false
+2026-11-08T09:51:09.2186544Z   submodules: false
+2026-11-08T09:51:09.2186756Z   set-safe-directory: true
+2026-11-08T09:51:09.2187214Z env:
+2026-11-08T09:51:09.2187474Z   MASK_MACHINE: ***
+2026-11-08T09:51:09.2187707Z   MASK_USER: ***
+2026-11-08T09:51:09.2187977Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+2026-11-08T09:51:09.2188239Z   OMP_NUM_THREADS: 2
+2026-11-08T09:51:09.2188453Z   MKL_NUM_THREADS: 2
+2026-11-08T09:51:09.2188671Z   GIT_TERMINAL_PROMPT: 0
+2026-11-08T09:51:09.2188899Z ##[endgroup]
+2026-11-08T09:51:11.3112005Z Syncing repository: bingdongni/fastvideo-gpu-validation-20261108-47e7a794f1
+2026-11-08T09:51:11.3113392Z ##[group]Getting Git version info
+2026-11-08T09:51:11.3114174Z Working directory is 'C:\PR\github-gpu-runner-20261106\_work\fastvideo-gpu-validation-20261108-47e7a794f1\fastvideo-gpu-validation-20261108-47e7a794f1'
+2026-11-08T09:51:11.3308116Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe version
+2026-11-08T09:51:11.3692018Z git version 2.56.0.windows.4
+2026-11-08T09:51:11.3730830Z ##[endgroup]
+2026-11-08T09:51:11.3746296Z Copying 'C:\Users\***\.gitconfig' to 'C:\PR\github-gpu-runner-20261106\_work\_temp\787ed5d7-cc5f-4fe7-9d6d-5d55d49d00d5\.gitconfig'
+2026-11-08T09:51:11.3769640Z Temporarily overriding HOME='C:\PR\github-gpu-runner-20261106\_work\_temp\787ed5d7-cc5f-4fe7-9d6d-5d55d49d00d5' before making global git config changes
+2026-11-08T09:51:11.3770522Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-08T09:51:11.3779159Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --global --add safe.directory C:\PR\github-gpu-runner-20261106\_work\fastvideo-gpu-validation-20261108-47e7a794f1\fastvideo-gpu-validation-20261108-47e7a794f1
+2026-11-08T09:51:11.4170521Z Deleting the contents of 'C:\PR\github-gpu-runner-20261106\_work\fastvideo-gpu-validation-20261108-47e7a794f1\fastvideo-gpu-validation-20261108-47e7a794f1'
+2026-11-08T09:51:11.4178199Z ##[group]Initializing the repository
+2026-11-08T09:51:11.4187072Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe init C:\PR\github-gpu-runner-20261106\_work\fastvideo-gpu-validation-20261108-47e7a794f1\fastvideo-gpu-validation-20261108-47e7a794f1
+2026-11-08T09:51:11.6938602Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-08T09:51:11.6940759Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-08T09:51:11.6941325Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-08T09:51:11.6941718Z hint: call:
+2026-11-08T09:51:11.6941930Z hint:
+2026-11-08T09:51:11.6942249Z hint: 	git config --global init.defaultBranch <name>
+2026-11-08T09:51:11.6942554Z hint:
+2026-11-08T09:51:11.6942897Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-08T09:51:11.6943415Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-08T09:51:11.6952782Z hint:
+2026-11-08T09:51:11.6953087Z hint: 	git branch -m <name>
+2026-11-08T09:51:11.6953344Z hint:
+2026-11-08T09:51:11.6953730Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-08T09:51:11.6955981Z Initialized empty Git repository in C:/PR/github-gpu-runner-20261106/_work/fastvideo-gpu-validation-20261108-47e7a794f1/fastvideo-gpu-validation-20261108-47e7a794f1/.git/
+2026-11-08T09:51:11.6999643Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe remote add origin https://github.com/bingdongni/fastvideo-gpu-validation-20261108-47e7a794f1
+2026-11-08T09:51:11.7542342Z ##[endgroup]
+2026-11-08T09:51:11.7542837Z ##[group]Disabling automatic garbage collection
+2026-11-08T09:51:11.7550424Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --local gc.auto 0
+2026-11-08T09:51:11.8098050Z ##[endgroup]
+2026-11-08T09:51:11.8098596Z ##[group]Setting up auth
+2026-11-08T09:51:11.8108340Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --local --name-only --get-regexp core\.sshCommand
+2026-11-08T09:51:11.8703151Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-11-08T09:51:12.8822496Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-08T09:51:12.9215586Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-11-08T09:51:13.6742974Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2026-11-08T09:51:13.7288119Z ##[endgroup]
+2026-11-08T09:51:13.7288625Z ##[group]Fetching the repository
+2026-11-08T09:51:13.7298753Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +8310ce6a5ed6bae8369ccda9229f52c12039397b:refs/remotes/origin/main
+2026-11-08T09:51:17.8105629Z From https://github.com/bingdongni/fastvideo-gpu-validation-20261108-47e7a794f1
+2026-11-08T09:51:17.8106564Z  * [new ref]         8310ce6a5ed6bae8369ccda9229f52c12039397b -> origin/main
+2026-11-08T09:51:17.8178849Z ##[endgroup]
+2026-11-08T09:51:17.8179320Z ##[group]Determining the checkout info
+2026-11-08T09:51:17.8180083Z ##[endgroup]
+2026-11-08T09:51:17.8190857Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe sparse-checkout disable
+2026-11-08T09:51:17.9009330Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --local --unset-all extensions.worktreeConfig
+2026-11-08T09:51:17.9526053Z ##[group]Checking out the ref
+2026-11-08T09:51:17.9532993Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe checkout --progress --force -B main refs/remotes/origin/main
+2026-11-08T09:51:18.1863519Z Switched to a new branch 'main'
+2026-11-08T09:51:18.1906092Z branch 'main' set up to track 'origin/main'.
+2026-11-08T09:51:18.1945962Z ##[endgroup]
+2026-11-08T09:51:18.2335500Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe log -1 --format=%H
+2026-11-08T09:51:18.2662067Z 8310ce6a5ed6bae8369ccda9229f52c12039397b
+2026-11-08T09:51:18.2704589Z ##[group]Removing auth
+2026-11-08T09:51:18.2712795Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --local --name-only --get-regexp core\.sshCommand
+2026-11-08T09:51:18.3070958Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-11-08T09:51:19.0740053Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-08T09:51:19.1053024Z http.https://github.com/.extraheader
+2026-11-08T09:51:19.1101210Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --local --unset-all http.https://github.com/.extraheader
+2026-11-08T09:51:19.1529388Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-11-08T09:51:19.9625192Z ##[endgroup]
+2026-11-08T09:51:20.0176636Z ##[group]Run & 'C:\PR\kvpress-gpu-venv-20261107\Scripts\python.exe' -c "import hashlib,pathlib; pairs=[('fastvideo/attention/backends/flash_attn.py','2401a84751c5e93cc4a828db8ccdb31237c2929e70677e19ca716dfb5ef44ff8'),('fastvideo/attention/backends/abstract.py','2a738821b0505b658f7b722ab217fe6ddd0d326329235b4bc390ae90317c880c'),('fastvideo/attention/backends/sdpa.py','48a8aaa8bf19592510156a9983f12fcc6e60bfb547fbab3134b17f4ec88330cb'),('fastvideo/tests/attention/test_flash_attn_no_pad_custom_op.py','42431c01da1efcbff4780104f26c1fbc99291072e5adc2131d5d7852606edac6'),('baseline_flash_attn.py','56ba56b87ee2d0e1e31704cd46b3788bf63511fc67c54806d6251fa66c94b259'),('fastvideo_gpu_adapter_validation_20261108.py','bb450da099c0193951c0ce702554d66f5854f37d8d86b89cd620ff8984fa26fc')]; assert all(hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest()==s for p,s in pairs); print('All source hashes verified')"
+2026-11-08T09:51:20.0182401Z & 'C:\PR\kvpress-gpu-venv-20261107\Scripts\python.exe' -c "import hashlib,pathlib; pairs=[('fastvideo/attention/backends/flash_attn.py','2401a84751c5e93cc4a828db8ccdb31237c2929e70677e19ca716dfb5ef44ff8'),('fastvideo/attention/backends/abstract.py','2a738821b0505b658f7b722ab217fe6ddd0d326329235b4bc390ae90317c880c'),('fastvideo/attention/backends/sdpa.py','48a8aaa8bf19592510156a9983f12fcc6e60bfb547fbab3134b17f4ec88330cb'),('fastvideo/tests/attention/test_flash_attn_no_pad_custom_op.py','42431c01da1efcbff4780104f26c1fbc99291072e5adc2131d5d7852606edac6'),('baseline_flash_attn.py','56ba56b87ee2d0e1e31704cd46b3788bf63511fc67c54806d6251fa66c94b259'),('fastvideo_gpu_adapter_validation_20261108.py','bb450da099c0193951c0ce702554d66f5854f37d8d86b89cd620ff8984fa26fc')]; assert all(hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest()==s for p,s in pairs); print('All source hashes verified')"
+2026-11-08T09:51:20.0185368Z if ($LASTEXITCODE -ne 0) { throw 'Source hash verification failed' }
+2026-11-08T09:51:20.0185863Z Write-Host 'FastVideo source commit: 23e89e984958076a3fa2c81685202df68723d1fc'
+2026-11-08T09:51:20.0186592Z Write-Host 'Original upstream commit: ce970eb715215c79a169658d7aa6c8a96e64891e'
+2026-11-08T09:51:20.0187109Z nvidia-smi --query-gpu=name,driver_version,memory.total --format=csv,noheader
+2026-11-08T09:51:20.0187546Z if ($LASTEXITCODE -ne 0) { throw 'nvidia-smi failed' }
+2026-11-08T09:51:20.0188363Z & 'C:\PR\kvpress-gpu-venv-20261107\Scripts\python.exe' -c "import torch; assert torch.cuda.is_available(); print('GPU:', torch.cuda.get_device_name(0), 'PyTorch:', torch.__version__, 'CUDA:', torch.version.cuda)"
+2026-11-08T09:51:20.0189193Z if ($LASTEXITCODE -ne 0) { throw 'CUDA check failed' }
+2026-11-08T09:51:20.0234024Z shell: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE -command ". '{0}'"
+2026-11-08T09:51:20.0234416Z env:
+2026-11-08T09:51:20.0234653Z   MASK_MACHINE: ***
+2026-11-08T09:51:20.0234847Z   MASK_USER: ***
+2026-11-08T09:51:20.0235045Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+2026-11-08T09:51:20.0235273Z   OMP_NUM_THREADS: 2
+2026-11-08T09:51:20.0235443Z   MKL_NUM_THREADS: 2
+2026-11-08T09:51:20.0235612Z   GIT_TERMINAL_PROMPT: 0
+2026-11-08T09:51:20.0235788Z ##[endgroup]
+2026-11-08T09:51:20.6726968Z All source hashes verified
+2026-11-08T09:51:20.7599572Z FastVideo source commit: 23e89e984958076a3fa2c81685202df68723d1fc
+2026-11-08T09:51:20.7607564Z Original upstream commit: ce970eb715215c79a169658d7aa6c8a96e64891e
+2026-11-08T09:51:22.4849458Z NVIDIA GeForce RTX 4060 Laptop GPU, 617.42, 8188 MiB
+2026-11-08T09:51:26.8237775Z GPU: NVIDIA GeForce RTX 4060 Laptop GPU PyTorch: 2.6.0+cu124 CUDA: 12.4
+2026-11-08T09:51:27.3036971Z ##[group]Run $env:PYTHONPATH = $env:GITHUB_WORKSPACE
+2026-11-08T09:51:27.3037398Z $env:PYTHONPATH = $env:GITHUB_WORKSPACE
+2026-11-08T09:51:27.3037821Z $baseline = Join-Path $env:RUNNER_TEMP ("fastvideo-baseline-" + $env:GITHUB_RUN_ID)
+2026-11-08T09:51:27.3038314Z New-Item -ItemType Directory -Force -Path $baseline | Out-Null
+2026-11-08T09:51:27.3038877Z Copy-Item -LiteralPath (Join-Path $env:GITHUB_WORKSPACE 'fastvideo') -Destination $baseline -Recurse
+2026-11-08T09:51:27.3039645Z Copy-Item -LiteralPath 'baseline_flash_attn.py' -Destination (Join-Path $baseline 'fastvideo/attention/backends/flash_attn.py') -Force
+2026-11-08T09:51:27.3040216Z $env:FASTVIDEO_SOURCE_ROOT = $baseline
+2026-11-08T09:51:27.3040647Z $test = Join-Path $baseline 'fastvideo/tests/attention/test_flash_attn_no_pad_custom_op.py'
+2026-11-08T09:51:27.3041699Z $output = & 'C:\PR\kvpress-gpu-venv-20261107\Scripts\python.exe' -m pytest -p fastvideo_gpu_adapter_validation_20261108 --noconftest -o addopts='' $test -k test_backend_padding_mask_and_custom_scale -q --tb=short 2>&1 | Out-String
+2026-11-08T09:51:27.3042878Z $testExit = $LASTEXITCODE
+2026-11-08T09:51:27.3043153Z Write-Host $output
+2026-11-08T09:51:27.3043569Z if ($testExit -ne 1 -or $output -notmatch '4 failed, 2 passed') { throw 'Unexpected baseline result' }
+2026-11-08T09:51:27.3043989Z exit 0
+2026-11-08T09:51:27.3074965Z shell: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE -command ". '{0}'"
+2026-11-08T09:51:27.3075337Z env:
+2026-11-08T09:51:27.3075583Z   MASK_MACHINE: ***
+2026-11-08T09:51:27.3075786Z   MASK_USER: ***
+2026-11-08T09:51:27.3075979Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+2026-11-08T09:51:27.3076203Z   OMP_NUM_THREADS: 2
+2026-11-08T09:51:27.3076380Z   MKL_NUM_THREADS: 2
+2026-11-08T09:51:27.3076554Z   GIT_TERMINAL_PROMPT: 0
+2026-11-08T09:51:27.3076736Z ##[endgroup]
+2026-11-08T09:51:33.0729718Z .FFF.F                                                                   [100%]
+2026-11-08T09:51:33.0730405Z ================================== FAILURES ===================================
+2026-11-08T09:51:33.0730862Z _____________ test_backend_padding_mask_and_custom_scale[bool-64] _____________
+2026-11-08T09:51:33.0800885Z ..\..\_temp\fastvideo-baseline-42468886157\fastvideo\tests\attention\test_flash_attn_no_pad_custom_op.py:324: in test_backend_padding_mask_and_custom_scale
+2026-11-08T09:51:33.0802061Z     torch.testing.assert_close(actual, expected, atol=2e-2, rtol=2e-2)
+2026-11-08T09:51:33.0802609Z E   AssertionError: Tensor-likes are not close!
+2026-11-08T09:51:33.0802899Z E   
+2026-11-08T09:51:33.0803135Z E   Mismatched elements: 10558 / 11136 (94.8%)
+2026-11-08T09:51:33.0803646Z E   Greatest absolute difference: 2.177734375 at index (26, 0, 38) (up to 0.02 allowed)
+2026-11-08T09:51:33.0804246Z E   Greatest relative difference: 2968.0 at index (23, 1, 0) (up to 0.02 allowed)
+2026-11-08T09:51:33.0876913Z ___________ test_backend_padding_mask_and_custom_scale[integer-48] ____________
+2026-11-08T09:51:33.0878344Z ..\..\_temp\fastvideo-baseline-42468886157\fastvideo\tests\attention\test_flash_attn_no_pad_custom_op.py:324: in test_backend_padding_mask_and_custom_scale
+2026-11-08T09:51:33.0879180Z     torch.testing.assert_close(actual, expected, atol=2e-2, rtol=2e-2)
+2026-11-08T09:51:33.0879637Z E   AssertionError: Tensor-likes are not close!
+2026-11-08T09:51:33.0879917Z E   
+2026-11-08T09:51:33.0880144Z E   Mismatched elements: 9534 / 12288 (77.6%)
+2026-11-08T09:51:33.0880642Z E   Greatest absolute difference: 3.552734375 at index (1, 21, 1, 23) (up to 0.02 allowed)
+2026-11-08T09:51:33.0881240Z E   Greatest relative difference: 5148.0 at index (0, 22, 1, 10) (up to 0.02 allowed)
+2026-11-08T09:51:33.0881804Z ___________ test_backend_padding_mask_and_custom_scale[integer-64] ____________
+2026-11-08T09:51:33.0884182Z ..\..\_temp\fastvideo-baseline-42468886157\fastvideo\tests\attention\test_flash_attn_no_pad_custom_op.py:324: in test_backend_padding_mask_and_custom_scale
+2026-11-08T09:51:33.0884995Z     torch.testing.assert_close(actual, expected, atol=2e-2, rtol=2e-2)
+2026-11-08T09:51:33.0885442Z E   AssertionError: Tensor-likes are not close!
+2026-11-08T09:51:33.0885705Z E   
+2026-11-08T09:51:33.0885921Z E   Mismatched elements: 10634 / 11136 (95.5%)
+2026-11-08T09:51:33.0886376Z E   Greatest absolute difference: 2.365234375 at index (26, 0, 38) (up to 0.02 allowed)
+2026-11-08T09:51:33.0886935Z E   Greatest relative difference: 2532.0 at index (23, 1, 0) (up to 0.02 allowed)
+2026-11-08T09:51:33.0887563Z ___________ test_backend_padding_mask_and_custom_scale[additive-64] ___________
+2026-11-08T09:51:33.0888599Z ..\..\_temp\fastvideo-baseline-42468886157\fastvideo\tests\attention\test_flash_attn_no_pad_custom_op.py:324: in test_backend_padding_mask_and_custom_scale
+2026-11-08T09:51:33.0889664Z     torch.testing.assert_close(actual, expected, atol=2e-2, rtol=2e-2)
+2026-11-08T09:51:33.0890131Z E   AssertionError: Tensor-likes are not close!
+2026-11-08T09:51:33.0890413Z E   
+2026-11-08T09:51:33.0890644Z E   Mismatched elements: 10558 / 11136 (94.8%)
+2026-11-08T09:51:33.0891120Z E   Greatest absolute difference: 2.177734375 at index (26, 0, 38) (up to 0.02 allowed)
+2026-11-08T09:51:33.0891721Z E   Greatest relative difference: 2968.0 at index (23, 1, 0) (up to 0.02 allowed)
+2026-11-08T09:51:33.0892246Z =========================== short test summary info ===========================
+2026-11-08T09:51:33.0896683Z FAILED ..\..\_temp\fastvideo-baseline-42468886157\fastvideo\tests\attention\test_flash_attn_no_pad_custom_op.py::test_backend_padding_mask_and_custom_scale[bool-64] - AssertionError: Tensor-likes are not close!
+2026-11-08T09:51:33.0897692Z 
+2026-11-08T09:51:33.0897892Z Mismatched elements: 10558 / 11136 (94.8%)
+2026-11-08T09:51:33.0898429Z Greatest absolute difference: 2.177734375 at index (26, 0, 38) (up to 0.02 allowed)
+2026-11-08T09:51:33.0899070Z Greatest relative difference: 2968.0 at index (23, 1, 0) (up to 0.02 allowed)
+2026-11-08T09:51:33.0900256Z FAILED ..\..\_temp\fastvideo-baseline-42468886157\fastvideo\tests\attention\test_flash_attn_no_pad_custom_op.py::test_backend_padding_mask_and_custom_scale[integer-48] - AssertionError: Tensor-likes are not close!
+2026-11-08T09:51:33.0901032Z 
+2026-11-08T09:51:33.0901163Z Mismatched elements: 9534 / 12288 (77.6%)
+2026-11-08T09:51:33.0902475Z Greatest absolute difference: 3.552734375 at index (1, 21, 1, 23) (up to 0.02 allowed)
+2026-11-08T09:51:33.0903057Z Greatest relative difference: 5148.0 at index (0, 22, 1, 10) (up to 0.02 allowed)
+2026-11-08T09:51:33.0904228Z FAILED ..\..\_temp\fastvideo-baseline-42468886157\fastvideo\tests\attention\test_flash_attn_no_pad_custom_op.py::test_backend_padding_mask_and_custom_scale[integer-64] - AssertionError: Tensor-likes are not close!
+2026-11-08T09:51:33.0905006Z 
+2026-11-08T09:51:33.0905142Z Mismatched elements: 10634 / 11136 (95.5%)
+2026-11-08T09:51:33.0905594Z Greatest absolute difference: 2.365234375 at index (26, 0, 38) (up to 0.02 allowed)
+2026-11-08T09:51:33.0906407Z Greatest relative difference: 2532.0 at index (23, 1, 0) (up to 0.02 allowed)
+2026-11-08T09:51:33.0907581Z FAILED ..\..\_temp\fastvideo-baseline-42468886157\fastvideo\tests\attention\test_flash_attn_no_pad_custom_op.py::test_backend_padding_mask_and_custom_scale[additive-64] - AssertionError: Tensor-likes are not close!
+2026-11-08T09:51:33.0908404Z 
+2026-11-08T09:51:33.0908529Z Mismatched elements: 10558 / 11136 (94.8%)
+2026-11-08T09:51:33.0908965Z Greatest absolute difference: 2.177734375 at index (26, 0, 38) (up to 0.02 allowed)
+2026-11-08T09:51:33.0909527Z Greatest relative difference: 2968.0 at index (23, 1, 0) (up to 0.02 allowed)
+2026-11-08T09:51:33.0909951Z 4 failed, 2 passed, 13 deselected in 1.03s
+2026-11-08T09:51:33.0910124Z 
+2026-11-08T09:51:33.1260315Z ##[group]Run $env:PYTHONPATH = $env:GITHUB_WORKSPACE
+2026-11-08T09:51:33.1260754Z $env:PYTHONPATH = $env:GITHUB_WORKSPACE
+2026-11-08T09:51:33.1261063Z $env:FASTVIDEO_SOURCE_ROOT = $env:GITHUB_WORKSPACE
+2026-11-08T09:51:33.1261360Z $env:FASTVIDEO_TEST_FA_VERSION = '2'
+2026-11-08T09:51:33.1261817Z $test = Join-Path $env:FASTVIDEO_SOURCE_ROOT 'fastvideo/tests/attention/test_flash_attn_no_pad_custom_op.py'
+2026-11-08T09:51:33.1262764Z & 'C:\PR\kvpress-gpu-venv-20261107\Scripts\python.exe' -m pytest -p fastvideo_gpu_adapter_validation_20261108 --noconftest -o addopts='' $test -k test_backend_padding_mask_and_custom_scale -q --tb=short
+2026-11-08T09:51:33.1263704Z if ($LASTEXITCODE -ne 0) { throw 'Patched adapter tests failed' }
+2026-11-08T09:51:33.1296462Z shell: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE -command ". '{0}'"
+2026-11-08T09:51:33.1296823Z env:
+2026-11-08T09:51:33.1297107Z   MASK_MACHINE: ***
+2026-11-08T09:51:33.1297304Z   MASK_USER: ***
+2026-11-08T09:51:33.1297486Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+2026-11-08T09:51:33.1297703Z   OMP_NUM_THREADS: 2
+2026-11-08T09:51:33.1297871Z   MKL_NUM_THREADS: 2
+2026-11-08T09:51:33.1298047Z   GIT_TERMINAL_PROMPT: 0
+2026-11-08T09:51:33.1298225Z ##[endgroup]
+2026-11-08T09:51:38.2499834Z ......                                                                   [100%]
+2026-11-08T09:51:38.2500210Z 6 passed, 13 deselected in 0.85s
+2026-11-08T09:51:38.6417046Z ##[group]Run $env:PYTHONPATH = $env:GITHUB_WORKSPACE
+2026-11-08T09:51:38.6417530Z $env:PYTHONPATH = $env:GITHUB_WORKSPACE
+2026-11-08T09:51:38.6417883Z $env:FASTVIDEO_SOURCE_ROOT = $env:GITHUB_WORKSPACE
+2026-11-08T09:51:38.6418203Z $env:FASTVIDEO_TEST_FA_VERSION = '3'
+2026-11-08T09:51:38.6418675Z $test = Join-Path $env:FASTVIDEO_SOURCE_ROOT 'fastvideo/tests/attention/test_flash_attn_no_pad_custom_op.py'
+2026-11-08T09:51:38.6419663Z & 'C:\PR\kvpress-gpu-venv-20261107\Scripts\python.exe' -m pytest -p fastvideo_gpu_adapter_validation_20261108 --noconftest -o addopts='' $test -k test_backend_padding_mask_and_custom_scale -q --tb=short
+2026-11-08T09:51:38.6420607Z if ($LASTEXITCODE -ne 0) { throw 'Simulated FA3 guard tests failed' }
+2026-11-08T09:51:38.6451648Z shell: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE -command ". '{0}'"
+2026-11-08T09:51:38.6452019Z env:
+2026-11-08T09:51:38.6452310Z   MASK_MACHINE: ***
+2026-11-08T09:51:38.6452497Z   MASK_USER: ***
+2026-11-08T09:51:38.6452861Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+2026-11-08T09:51:38.6453081Z   OMP_NUM_THREADS: 2
+2026-11-08T09:51:38.6453257Z   MKL_NUM_THREADS: 2
+2026-11-08T09:51:38.6453419Z   GIT_TERMINAL_PROMPT: 0
+2026-11-08T09:51:38.6453600Z ##[endgroup]
+2026-11-08T09:51:43.6639894Z s.s.s.                                                                   [100%]
+2026-11-08T09:51:43.6640634Z 3 passed, 3 skipped, 13 deselected in 0.82s
+2026-11-08T09:51:44.0558029Z Post job cleanup.
+2026-11-08T09:51:44.1819480Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe version
+2026-11-08T09:51:44.2205048Z git version 2.56.0.windows.4
+2026-11-08T09:51:44.2259799Z Copying 'C:\Users\***\.gitconfig' to 'C:\PR\github-gpu-runner-20261106\_work\_temp\b0e82d99-879a-4d2c-981a-1b21da9d2e00\.gitconfig'
+2026-11-08T09:51:44.2283165Z Temporarily overriding HOME='C:\PR\github-gpu-runner-20261106\_work\_temp\b0e82d99-879a-4d2c-981a-1b21da9d2e00' before making global git config changes
+2026-11-08T09:51:44.2284004Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-08T09:51:44.2291901Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --global --add safe.directory C:\PR\github-gpu-runner-20261106\_work\fastvideo-gpu-validation-20261108-47e7a794f1\fastvideo-gpu-validation-20261108-47e7a794f1
+2026-11-08T09:51:44.2695096Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --local --name-only --get-regexp core\.sshCommand
+2026-11-08T09:51:44.3099478Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-11-08T09:51:44.9965727Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-08T09:51:45.0332744Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-11-08T09:51:45.7881430Z Cleaning up orphan processes
+2026-11-08T09:51:45.8481744Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
